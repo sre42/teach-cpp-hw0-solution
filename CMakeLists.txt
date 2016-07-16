@@ -21,4 +21,4 @@ include_directories(src)
 add_subdirectory(src)
 add_subdirectory(test)
 
-add_executable(main.cpp ${SOURCE_FILES})
+add_executable(main_executable ${SOURCE_FILES})
