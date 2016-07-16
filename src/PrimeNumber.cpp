@@ -6,39 +6,39 @@
 #include "PrimeNumber.h"
 #include <math.h>
 
-//find nth prime number from beginning
+//find nth prime number from the beginning
 bool isPrimeNumber(int num) {
 
-    if(num < 2) return false;
+  if (num < 2) return false;
 
-    for(int i = 2; i <= sqrt(num) ; i++) {
+  for (int i = 2; i <= sqrt(num); i++) {
 
-        if(num%i == 0) {
-            return false;
-        }
+    if (num % i == 0) {
+      return false;
     }
+  }
 
-    return true;
+  return true;
 }
 
 int PrimeNumber(int n) {
 
-    if(n <= 0) {
-        return -1;
+  if (n <= 0) {
+    return -1;
+  }
+
+  int count = 0;
+
+  for (int i = 0; ; i++) {
+
+    if (isPrimeNumber(i)) {
+      count++;
     }
 
-    int count = 0;
-
-    for(int i = 0; ; i++) {
-
-        if(isPrimeNumber(i)) {
-            count++;
-        }
-
-        if(count == n) {
-            return i;
-        }
+    if (count == n) {
+      return i;
     }
+  }
 
 }
 

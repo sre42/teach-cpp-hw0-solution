@@ -6,6 +6,6 @@
 #define _PRIMENUMBER_H
 
 
-int PrimeNumber(int n );
+int PrimeNumber(int n);
 
 #endif
