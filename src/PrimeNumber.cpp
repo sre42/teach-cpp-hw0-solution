@@ -6,6 +6,29 @@
 #include "PrimeNumber.h"
 #include <math.h>
 
+bool isPrimeNumber(int num);
+
+int PrimeNumber(int input) {
+
+  //return -1 for invalid input - less or equal to 0
+  if (input <= 0) {
+    return -1;
+  }
+
+  int count = 0;
+  int num = 0;
+
+  while(count != input) {
+
+    if (isPrimeNumber(++num)) {
+      count++;
+    }
+  }
+
+  return num;
+
+}
+
 //find nth prime number from the beginning
 bool isPrimeNumber(int num) {
 
@@ -19,26 +42,5 @@ bool isPrimeNumber(int num) {
   }
 
   return true;
-}
-
-int PrimeNumber(int n) {
-
-  if (n <= 0) {
-    return -1;
-  }
-
-  int count = 0;
-
-  for (int i = 0; ; i++) {
-
-    if (isPrimeNumber(i)) {
-      count++;
-    }
-
-    if (count == n) {
-      return i;
-    }
-  }
-
 }
 
