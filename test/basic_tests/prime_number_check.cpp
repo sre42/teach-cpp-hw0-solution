@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 #include "PrimeNumber.h"
 
-TEST(primenumber_test, validnumber) {
+TEST(primenumber_tests, validnumber) {
 
   EXPECT_EQ(5, PrimeNumber(3));
   EXPECT_EQ(17, PrimeNumber(7));
@@ -14,7 +14,7 @@ TEST(primenumber_test, validnumber) {
 }
 
 
-TEST(primenumber_test, invalidnumber) {
+TEST(primenumber_tests, invalidnumber) {
 
   EXPECT_EQ(-1, PrimeNumber(0));
   EXPECT_EQ(-1, PrimeNumber(-2));

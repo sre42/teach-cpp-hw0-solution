@@ -14,7 +14,7 @@ else ()
 endif ()
 
 
-set(SOURCE_FILES main.cpp src/PrimeNumber.h src/PrimeNumber.cpp)
+set(SOURCE_FILES main.cpp )
 
 include_directories(src)
 
@@ -22,3 +22,5 @@ add_subdirectory(src)
 add_subdirectory(test)
 
 add_executable(main_executable ${SOURCE_FILES})
+
+target_link_libraries(main_executable primes_library)

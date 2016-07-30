@@ -3,10 +3,10 @@
 TraviCI Badge here
 
 ##Problem statement :
-Write a function which finds nth prime number. For simplicity, we assume that input is always an integer. If input is smaller than or equal to 0, the function return -1.
+Write a function which finds the n<sup>th</sup> prime number. For simplicity, we assume that the input will always be an integer(int). If the input is smaller than or equal to 0, the function should return -1.
 
 ## Files to work on
-* `PrimeNumber.cpp` Implement the necessary functions therin
+* `src/PrimeNumber.cpp` Implement the necessary functions therin
 
 
 ###Running tests
@@ -20,7 +20,7 @@ Write a function which finds nth prime number. For simplicity, we assume that in
     * You can now use this configuration for better test display by CLion.
 
 ##Notes 
-* What is prime number ? https://en.wikipedia.org/wiki/Prime_number
+* What is a prime number ? https://en.wikipedia.org/wiki/Prime_number
 * In our problem, we consider 2 is the first prime number. 
 * Check the logs from Travis to verify the correctness of your program.
 * The Initial code will **not necessarily** compile. You will have to write the necessary code.
