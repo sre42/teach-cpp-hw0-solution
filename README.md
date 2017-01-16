@@ -1,4 +1,4 @@
-#HW2.5 Prime Numbers
+#HW0 Prime Numbers
 ###First Name - Last Name
 TraviCI Badge here
 
